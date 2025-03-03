@@ -6,7 +6,7 @@ void main(){
   printf("Enter no. of processes: ");
   scanf("%d",&no_ps);
 
-  int atbt[no_ps][2], ct[no_ps], tat[no_ps], wt[no_ps];
+  int atbt[no_ps][5];
 
   printf("Enter arrival time for processes: ");
   for(int i=0;i<no_ps;i++)
@@ -32,21 +32,21 @@ void main(){
 	  }
   }
 
-  ct[0] = atbt[0][1];
+  atbt[0][2] = atbt[0][1];
   int max;
   for(int i=1;i<no_ps;i++){
 	  max = 0;
 	  for(int j=i;j>=0;j--)
 		  max += atbt[j][1];
-	  ct[i] = max;
+	  atbt[i][2] = max;
   }
 
   for(int i=0;i<no_ps;i++){
-    tat[i] = ct[i] - atbt[i][0];
-    wt[i] = tat[i] - atbt[i][1];
+    atbt[i][3] = atbt[i][2] - atbt[i][0];
+    atbt[i][4] = atbt[i][3] - atbt[i][1];
   }
 
   printf("\nAT\tBT\tCT\tTAT\tWT");
   for(int i=0;i<no_ps;i++)
-	  printf("\n%d\t%d\t%d\t%d\t%d",atbt[i][0],atbt[i][1],ct[i],tat[i],wt[i]);
+	  printf("\n%d\t%d\t%d\t%d\t%d",atbt[i][0],atbt[i][1],atbt[i][2],atbt[i][3],atbt[i][4]);
 }
