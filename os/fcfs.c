@@ -41,29 +41,12 @@ void main(){
 	  ct[i] = max;
   }
 
-  for(int i=0;i<no_ps;i++)
+  for(int i=0;i<no_ps;i++){
     tat[i] = ct[i] - atbt[i][0];
-
-  for(int i=0;i<no_ps;i++)
     wt[i] = tat[i] - atbt[i][1];
+  }
 
-  printf("\nAT: ");
+  printf("\nAT\tBT\tCT\tTAT\tWT");
   for(int i=0;i<no_ps;i++)
-	  printf("\t%d",atbt[i][0]);
-
-  printf("\nBT:");
-  for(int i=0;i<no_ps;i++)
-	  printf("\t%d",atbt[i][1]);
-
-  printf("\nCT:");
-  for(int i=0;i<no_ps;i++)
-	  printf("\t%d",ct[i]);
-
-  printf("\nTAT:");
-  for(int i=0;i<no_ps;i++)
-	  printf("\t%d",tat[i]);
-
-  printf("\nWT:");
-  for(int i=0;i<no_ps;i++)
-	  printf("\t%d",wt[i]);
+	  printf("\n%d\t%d\t%d\t%d\t%d",atbt[i][0],atbt[i][1],ct[i],tat[i],wt[i]);
 }
