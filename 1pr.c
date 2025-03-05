@@ -75,7 +75,7 @@ void main(){
   /* } */
   
   /* ================= 1-14 ================= */ 
-  /* int c, i=0, oth; */
+  /* int c, i=0, j, oth=0; */
   /* int wlarr[36]; */
   /**/
   /* for(i=0;i<36;i++){ */
@@ -91,13 +91,20 @@ void main(){
   /*     ++oth; */
   /* } */
   /**/
-  /* printf("Nums:"); */
-  /* for(i=0;i<=9;i++){ */
-  /*   printf(" %d", wlarr[i]); */
+  /* for(j=0;j<36;j++){ */
+  /*   if(wlarr[j] != 0){ */
+  /*     if (j <= 9)  */
+  /*       printf("%d, %d:",j,wlarr[j]); */
+  /*     else */
+  /*       printf("%c, %d:",j+87,wlarr[j]); */
+  /*     for(int k=0;k<wlarr[j];k++) */
+  /*       printf("| "); */
+  /*     printf("\n"); */
+  /*   } */
   /* } */
   /**/
-  /* printf("Alphas:"); */
-  /* for(i=10;i<=35;i++){ */
-  /*   printf(" %d", wlarr[i]); */
-  /* } */
+  /* printf("oth: "); */
+  /* for(j=0;j<oth;j++) */
+  /*   printf("| "); */
+
 }
