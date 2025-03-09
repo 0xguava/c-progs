@@ -26,7 +26,7 @@ void main(){
   /*   printf(" %d", ndigi[i]); */
   /* printf(", whites = %d and others = %d", nwh, noth); */
 
-  /* ============== 1.6 ============== */
+  /* ============== 1.9 ============== */
   int slen, len, max=0;
   char line[1000], longest[1000];
 
@@ -45,7 +45,7 @@ void main(){
 }
 
 
-/* ============== 1.6 ============== */
+/* ============== 1.9 ============== */
 int getl(char line[], int maxline){
   int c,i;
   for(i=0;i<maxline-1 && (c = getchar()) != EOF && c != '\n'; i++)
