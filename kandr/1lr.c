@@ -1,7 +1,8 @@
 #include<stdio.h>
 
-int getl(char line[], int maxlines);
-void cpy(char from[], char to[]);
+/* #### 1.6: */
+/* int getl(char line[], int maxlines); */
+/* void cpy(char from[], char to[]); */
 
 void main(){
   /* ============== 1.6 ============== */
