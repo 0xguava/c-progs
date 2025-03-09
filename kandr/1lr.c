@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/* #### 1.6: */
+/* #### 1.9: */
 /* int getl(char line[], int maxlines); */
 /* void cpy(char from[], char to[]); */
 
@@ -47,23 +47,21 @@ void main(){
 
 
 /* ============== 1.9 ============== */
-int getl(char l[], int max){
-  int c,i;
-  for(i=0;i<max-1 && (c = getchar()) != EOF && c != '\n'; i++)
-    l[i] = c;    
-
-  if(c == '\n'){
-    l[i] = c;
-    i++;
-  }
-  l[i] = '\0';
-
-  return i;
-}
-
-
-void cpy(char from[], char to[]){
-  int i=0;
-  while((to[i] = from[i]) != '\0')
-    i++;
-}
+/* int getl(char l[], int max){ */
+/*   int c,i; */
+/*   for(i=0;i<max-1 && (c = getchar()) != EOF && c != '\n'; i++) */
+/*     l[i] = c;     */
+/**/
+/*   if(c == '\n'){ */
+/*     l[i] = c; */
+/*     i++; */
+/*   } */
+/*   l[i] = '\0'; */
+/**/
+/*   return i; */
+/* } */
+/* void cpy(char from[], char to[]){ */
+/*   int i=0; */
+/*   while((to[i] = from[i]) != '\0') */
+/*     i++; */
+/* } */
