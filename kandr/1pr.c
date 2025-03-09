@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* int getl(char line[], int lim); // 1.17 */
+
 void main(){
   /* ================= 1-8 ================= */
   /* int c, b=0, t=0, n=0; */
@@ -127,4 +129,28 @@ void main(){
   /* for(j=0;j<oth;j++) */
   /*   printf("| "); */
 
+  /* ================= 1-17 ================= */ 
+  /* int len; */
+  /* char line[1000]; */
+  /**/
+  /* while((len = getl(line, 1000)) > 0) */
+  /*   if(len > 15) */
+  /*     printf("%s",line); */
 }
+
+/* ================= 1-17 ================= */ 
+/* int getl(char lin[], int li){ */
+/*   int i,c; */
+/**/
+/*   for(i=0; i<li && (c = getchar()) != EOF && c != '\n'; i++) */
+/*     lin[i] = c; */
+/**/
+/*   if(c == '\n'){ */
+/*     lin[i] = c; */
+/*     i++; */
+/*   } */
+/**/
+/*   lin[i] = '\0'; */
+/**/
+/*   return i; */
+/* } */
