@@ -37,7 +37,7 @@ void main(){
     }
   }
 
-  printf("length of longest: %d\n",slen);
+  printf("length of longest: %d\n",slen-2);
 
   if(max != 0)
     printf("%s",longest);
@@ -46,16 +46,16 @@ void main(){
 
 
 /* ============== 1.9 ============== */
-int getl(char line[], int maxline){
+int getl(char l[], int max){
   int c,i;
-  for(i=0;i<maxline-1 && (c = getchar()) != EOF && c != '\n'; i++)
-    line[i] = c;    
+  for(i=0;i<max-1 && (c = getchar()) != EOF && c != '\n'; i++)
+    l[i] = c;    
 
   if(c == '\n'){
-    line[i] = c;
+    l[i] = c;
     i++;
   }
-  line[i] = '\0';
+  l[i] = '\0';
 
   return i;
 }
