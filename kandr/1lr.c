@@ -28,21 +28,21 @@ void main(){
   /* printf(", whites = %d and others = %d", nwh, noth); */
 
   /* ============== 1.9 ============== */
-  int slen, len, max=0;
-  char line[1000], longest[1000];
-
-  while((len = getl(line,1000)) > 0){
-    if(len > max){
-      max = slen = len;
-      cpy(line, longest);
-    }
-  }
-
-  printf("length of longest: %d\n",slen-2);
-
-  if(max != 0)
-    printf("%s",longest);
-  
+  /* int slen, len, max=0; */
+  /* char line[1000], longest[1000]; */
+  /**/
+  /* while((len = getl(line,1000)) > 0){ */
+  /*   if(len > max){ */
+  /*     max = slen = len; */
+  /*     cpy(line, longest); */
+  /*   } */
+  /* } */
+  /**/
+  /* printf("length of longest: %d\n",slen-2); */
+  /**/
+  /* if(max != 0) */
+  /*   printf("%s",longest); */
+  /*  */
 }
 
 
