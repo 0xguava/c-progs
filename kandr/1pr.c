@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/* int getl(char line[], int lim); // 1.17 */
+/* int getl(char line[], int lim); // 1-17,1-18 */
+/* void removal(char [], int); // 1-18 */
 
 void main(){
   /* ================= 1-8 ================= */
@@ -136,9 +137,19 @@ void main(){
   /* while((len = getl(line, 1000)) > 0) */
   /*   if(len > 15) */
   /*     printf("%s",line); */
+
+/* ================= 1-18 ================= */ 
+  /* int len; */
+  /* char line[1000]; */
+  /**/
+  /* while((len = getl(line, 1000)) > 0){ */
+  /*   removal(line,len); */
+  /*   printf("%s",line); */
+  /* } */
+
 }
 
-/* ================= 1-17 ================= */ 
+/* ================= 1-17, 1-18 ================= */ 
 /* int getl(char lin[], int li){ */
 /*   int i,c; */
 /*   for(i=0; i<li && (c = getchar()) != EOF && c != '\n'; i++) */
@@ -149,4 +160,13 @@ void main(){
 /*   } */
 /*   lin[i] = '\0'; */
 /*   return i; */
+/* } */
+
+/* ================= 1-18 ================= */ 
+/* void removal(char line[], int len){ */
+/*   int i; */
+/*   for(i=len-2;line[i] == ' ' || line[i] == '\t';i--) */
+/*     ; */
+/*   line[i+1] = '\n'; */
+/*   line[i+2] = '\0'; */
 /* } */
