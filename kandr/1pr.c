@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-/* int getl(char line[], int lim); // 1-17,1-18 */
+/* int getl(char line[], int lim); // 1-17,1-18,1-19 */
 /* void removal(char [], int); // 1-18 */
+/* void reverse(char []); // 1-19 */
 
 void main(){
   /* ================= 1-8 ================= */
@@ -147,9 +148,17 @@ void main(){
   /*   printf("%s",line); */
   /* } */
 
+/* ================= 1-19 ================= */ 
+  /* int len; */
+  /* char line[1000]; */
+  /**/
+  /* while((len = getl(line, 1000)) > 0){ */
+  /*   reverse(line); */
+  /*   printf("%s",line); */
+  /* } */
 }
 
-/* ================= 1-17, 1-18 ================= */ 
+/* ================= 1-17, 1-18, 1-19 ================= */ 
 /* int getl(char lin[], int li){ */
 /*   int i,c; */
 /*   for(i=0; i<li && (c = getchar()) != EOF && c != '\n'; i++) */
@@ -169,4 +178,16 @@ void main(){
 /*     ; */
 /*   line[i+1] = '\n'; */
 /*   line[i+2] = '\0'; */
+/* } */
+
+/* ================= 1-19 ================= */ 
+/* void reverse(char line[]){ */
+/*   int len; */
+/*   for(len=0;line[len]!='\0';len++) */
+/*     ; */
+/*   for(int i=0;i<(len-1)/2;i++){ */
+/*     line[i] = line[i] + line[len-i-2]; */
+/*     line[len-i-2] = line[i] - line[len-i-2]; */
+/*     line[i] = line[i] - line[len-i-2]; */
+/*   } */
 /* } */
