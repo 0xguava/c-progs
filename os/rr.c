@@ -66,20 +66,35 @@ void main() {
 
   }
 
+  for (int i = 0; i < ps; i++){
+    tat[i] = ct[i] - at[i];
+    wt[i] = tat[i] - bt[i];
+  }
+
+  printf("\n");
+
   printf("AT:");
   for (int i = 0; i < ps; i++)
-    printf(" %d", at[i]);
-
+    printf("\t%d", at[i]);
   printf("\n");
 
   printf("BT:");
   for (int i = 0; i < ps; i++)
-    printf(" %d", bt[i]);
-
+    printf("\t%d", bt[i]);
   printf("\n");
 
   printf("CT:");
   for (int i = 0; i < ps; i++)
-    printf(" %d", ct[i]);
+    printf("\t%d", ct[i]);
+  printf("\n");
 
+  printf("TAT:");
+  for (int i = 0; i < ps; i++)
+    printf("\t%d", tat[i]);
+  printf("\n");
+
+  printf("WT:");
+  for (int i = 0; i < ps; i++)
+    printf("\t%d", wt[i]);
+  printf("\n");
 }
