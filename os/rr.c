@@ -29,7 +29,9 @@ void main() {
         bt[j] = bt[j] + bt[j + 1];
         bt[j + 1] = bt[j] - bt[j + 1];
         bt[j] = bt[j] - bt[j + 1];
-      };;
+      }
+    ;
+  ;
 
   for (int i = 0; i < ps; i++) {
     remt[i] = bt[i];
@@ -42,7 +44,8 @@ void main() {
     count = 0;
     for (int j = 0; j < ps; j++)
       if (remt[j] == 0)
-        count++;;
+        count++;
+    ;
 
     if (count == ps)
       break;
@@ -58,7 +61,8 @@ void main() {
           ct[i] = time;
           remt[i] = 0;
         }
-      };
+      }
+    ;
 
   }
 
